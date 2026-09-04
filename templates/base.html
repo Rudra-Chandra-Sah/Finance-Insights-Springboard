@@ -54,6 +54,7 @@
         <a class="{% if request.endpoint == 'goals' %}active{% endif %}" href="{{ url_for('goals') }}">Goals</a>
         <a class="nav-info {% if request.endpoint == 'alerts' %}active{% endif %}" href="{{ url_for('alerts') }}">Alerts</a>
         <a class="{% if request.endpoint == 'financial_health' %}active{% endif %}" href="{{ url_for('financial_health') }}">Financial Health</a>
+        <a class="{% if request.endpoint == 'pdf_report' %}active{% endif %}" href="{{ url_for('pdf_report') }}">PDF Report</a>
     </nav>
 
     <a class="sidebar-logout" href="{{ url_for('logout') }}">Logout</a>

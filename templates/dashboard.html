@@ -39,14 +39,19 @@
         </div>
 
     </div>
-<!-- Excel Report -->
+<!-- Reports -->
 <div class="row mt-4">
 
-    <div class="col-md-12 text-center">
+    <div class="col-md-12 text-center d-flex justify-content-center gap-2">
 
         <a href="{{ url_for('download_excel') }}"
            class="btn btn-success">
             📊 Download Excel Report
+        </a>
+
+        <a href="{{ url_for('pdf_report') }}"
+           class="btn btn-danger">
+            📄 Download PDF Report
         </a>
 
     </div>
